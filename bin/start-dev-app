@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+set -eu
+exec node_modules/.bin/nodemon --inspect=0.0.0.0:9232 index.js --watch core/ --watch index.js --exec 'node'
